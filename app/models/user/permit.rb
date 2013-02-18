@@ -35,7 +35,11 @@ class User::Permit < ActiveRecord::Base
 		end
 	end
 
-	def subject_for_authentication
-		subject_type and subject_id ? subject : subject_type.constantize
+	def subject
+		if subject_type and not subject_id then
+			subject_type.constantize
+		else
+			super
+		end
 	end
 end
