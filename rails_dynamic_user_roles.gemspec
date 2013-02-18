@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 	s.authors     = ['Alexander Senko']
 	s.email       = ['Alexander.Senko@gmail.com']
 #	s.homepage    = 'TODO'
-#	s.summary     = 'TODO: Summary of RailsDynamicUserRoles.'
+	s.summary     = 'DB-driven user roles & permits for Rails with CanCan support.'
 #	s.description = 'TODO: Description of RailsDynamicUserRoles.'
 
 	s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
