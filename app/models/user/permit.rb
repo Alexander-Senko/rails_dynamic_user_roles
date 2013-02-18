@@ -2,6 +2,8 @@ class User::Permit < ActiveRecord::Base
 	belongs_to :role,    inverse_of: :permits
 	belongs_to :subject, polymorphic: true, inverse_of: :applicable_permits
 
+	attr_protected # none
+
 	validates_presence_of :behavior, :action
 
 	def behavior_enum
