@@ -15,3 +15,5 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+gem 'rails_dynamic_associations', :git => 'https://github.com/softpro/rails_dynamic_associations.git'
