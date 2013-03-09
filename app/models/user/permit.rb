@@ -6,6 +6,10 @@ class User::Permit < ActiveRecord::Base
 
 	validates_presence_of :behavior, :action
 
+	scope :global, -> {
+		where role_id: nil
+	}
+
 	def behavior_enum
 		%w[
 			can
