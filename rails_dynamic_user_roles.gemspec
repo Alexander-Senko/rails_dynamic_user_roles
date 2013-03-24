@@ -9,9 +9,10 @@ Gem::Specification.new do |s|
 	s.version     = RailsDynamicUserRoles::VERSION
 	s.authors     = [ 'Alexander Senko' ]
 	s.email       = [ 'Alexander.Senko@gmail.com' ]
-#	s.homepage    = 'TODO'
+	s.homepage    = 'https://github.com/softpro/rails_dynamic_user_roles'
 	s.summary     = 'DB-driven user roles & permits for Rails with CanCan support.'
-#	s.description = 'TODO: Description of RailsDynamicUserRoles.'
+	s.description = 'Define your permit-based user roles in the database & get CanCan Ability built on them.'
+	s.license     = 'MIT'
 
 	s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
