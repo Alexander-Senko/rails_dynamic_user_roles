@@ -2,10 +2,6 @@ class User::Permit < ActiveRecord::Base
 	belongs_to :role,    inverse_of: :permits
 	belongs_to :subject, polymorphic: true, inverse_of: :applicable_permits
 
-	# all attributes are accessible for mass assignment
-	attr_protected unless
-		defined? ActiveModel::DeprecatedMassAssignmentSecurity # Rails 4
-
 	validates_presence_of :behavior, :action
 
 	scope :global, -> {
